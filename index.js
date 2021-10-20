@@ -12,4 +12,4 @@ http.createServer((req, res) => {
     //giving the response
     res.write(data);
     res.end();
-}).listen(8000);
+}).listen(process.env.PORT || 4000);
